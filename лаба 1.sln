@@ -21,17 +21,40 @@ public void show(int n)
             falseagain.Checked = true;
             break;
     }
-    switch (n)
-    {
-        case 0:
-            questone.Text = "первый вопрос";
+   
+       //Вопрос
+switch (n)
+{
+    case 0:
+        questone.Text = "Персональный компьютер состоит из:";
 
-            break;
-        case 1:
-            questone.Text = "второй вопрос";
-            break;
-        case 2:
-            questone.Text = "третий вопрос";
-            break;
+        break;
+    case 1:
+        questone.Text = "Разрядность микропроцессора — это:";
+        break;
+    case 2:
+        questone.Text = "Постоянная память предназначена для";
+        break;
+}
+//Первые ответы
+switch (n)
+{
+    case 0:
+        checkboxone.Text = "системного блока";
+        break;
+    case 1:
+        checkboxtwo.Text = "телефона";
+        break;
+    case 2:
+        checkboxtrihd.Text = "плеера";
+        break;
+}
+//Второй ответ
+if (n==1)
+{
+    checkboxone.Text = "наибольшая единица информации";
+    checkboxtwo.Text = "количество битов, которое воспринимается микропроцессором как единое целое";
+    checkboxtrihd.Text = "наименьшая единица информации";
+}
     }
 }
